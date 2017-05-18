@@ -1,3 +1,4 @@
+@sampleTests
 Feature: Test home page
 
 	Scenario: Existence of links 
