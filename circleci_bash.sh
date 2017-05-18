@@ -84,8 +84,10 @@ until [[ $(echo "$percentage==100" | bc -l) == 1 ]]; do
   fi
 done
 
+mkdir $CIRCLE_TEST_REPORTS/loadimpact
+
 #show results
 echo "Show results"
-echo "$maxVULoadTime"
+#echo "$maxVULoadTime"
 echo "Max VU Load Time: $maxVULoadTime"
 echo "Full results at https://app.loadimpact.com/test-runs/$tid"
